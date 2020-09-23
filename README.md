@@ -1,0 +1,5 @@
+# faster-rcnn-dnn
+使用opencv的dnn模块做faster-rcnn目标检测
+训练模型的下载地址是 http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_v2_coco_2018_01_28.tar.gz
+下载完成后解压到faster_rcnn_inception_v2_coco_2018_01_28文件夹里，graph.pbtxt已经在里面的，不需要运行程序生成它
+准备就绪后，运行python main_detect_img.py
