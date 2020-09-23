@@ -44,6 +44,7 @@ class general_faster_rcnn(object):
         pbtxt_file = os.path.join(modelpath, "graph.pbtxt")
 
         net = cv2.dnn.readNetFromTensorflow(pb_file, pbtxt_file)
+        #net = cv2.dnn.readNetFromTensorflow(pb_file)  ###报错
         net.setPreferableBackend(cv2.dnn.DNN_BACKEND_OPENCV)
         net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
 
